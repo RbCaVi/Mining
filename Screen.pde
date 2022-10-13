@@ -1,7 +1,8 @@
 abstract class Screen {
+  boolean active;
   protected float w,h;
   final void draw() {
-    draw(width, height);
+    this.draw(width, height);
   }
   final void touchStart() {
     touchStart(width, height);
